@@ -1,3 +1,5 @@
+<pre><code>\cheetah_shift\receiver\index.html</code></pre>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,37 +30,41 @@
 </head>
 <body>
   <div class="status" id="status">🕓 Connecting...</div>
-  <textarea id="output" readonly>👀 대기 중...</textarea>
+  <textarea id="output" inputmode="none">👀 대기 중...</textarea>
 
   <script>
-    const status = document.getElementById('status');
-    const output = document.getElementById('output');
+  const status = document.getElementById('status');
+  const output = document.getElementById('output');
 
-    const socket = new WebSocket("ws://192.168.219.101:8765");
+  const protocol = location.protocol === "https:" ? "wss" : "ws";
+  const host = location.hostname;
+  const socket = new WebSocket(`${protocol}://${host}:8765`);
 
-    console.log("🔌 Connecting to WebSocket...");
 
-    socket.onopen = () => {
-      console.log("✅ WebSocket connected");
-      status.textContent = "✅ Connected to CheetahShift!";
-      output.value = ""; // 초기화
-    };
+  console.log("🔌 Connecting to WebSocket...");
 
-    socket.onmessage = (event) => {
-      console.log("📥 Received:", event.data);
-      output.value += event.data;
-      output.scrollTop = output.scrollHeight;
-    };
+  socket.onopen = () => {
+    console.log("✅ WebSocket connected");
+    status.textContent = "✅ Connected to CheetahShift!";
+    output.value = ""; // 초기화
+  };
 
-    socket.onclose = () => {
-      console.log("❌ WebSocket closed");
-      status.textContent = "❌ WebSocket disconnected.";
-    };
+  socket.onmessage = (event) => {
+    console.log("📥 Received:", event.data);
+    output.value += event.data;
+    output.scrollTop = output.scrollHeight;
+  };
 
-    socket.onerror = (error) => {
-      console.error("⚠️ WebSocket error:", error);
-      status.textContent = "⚠️ WebSocket error.";
-    };
-  </script>
+  socket.onclose = () => {
+    console.log("❌ WebSocket closed");
+    status.textContent = "❌ WebSocket disconnected.";
+  };
+
+  socket.onerror = (error) => {
+    console.error("⚠️ WebSocket error:", error);
+    status.textContent = "⚠️ WebSocket error.";
+  };
+</script>
+
 </body>
 </html>
