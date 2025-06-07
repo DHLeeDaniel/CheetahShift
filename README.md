@@ -1,10 +1,10 @@
-# ⚙️CheetahShift-App 🐆
+# ⚙️CheetahCast-App 🐆
 
-# 🐆 (ENG)CheetahShift-App
+# 🐆 (ENG)CheetahCast-App
 
 **Let the input flow.**
 
-CheetahShift is a lightweight, real-time input streaming utility
+CheetahCast is a lightweight, real-time input streaming utility
 
 that mirrors your **laptop keyboard input** to any device
 
@@ -64,7 +64,7 @@ with a browser — including iPad, Android tablets, or even another desktop —
 
 ## 📦 GitHub
 
-https://github.com/DHLeeDaniel/CheetahShift
+https://github.com/DHLeeDaniel/CheetahCast
 
 
 -----
@@ -72,7 +72,7 @@ https://github.com/DHLeeDaniel/CheetahShift
 
 **입력을 흐르게 하라.**
 
-CheetahShift는 노트북의 키보드 입력을
+CheetahCast는 노트북의 키보드 입력을
 
 iPad·Android 태블릿, 그리고 데스크탑 노트북 등 브라우저를 띄울 수 있는 기기에서
 
@@ -128,12 +128,12 @@ iPad·Android 태블릿, 그리고 데스크탑 노트북 등 브라우저를 �
 
 ## 📦 GitHub 링크
 
-https://github.com/DHLeeDaniel/CheetahShift 
+https://github.com/DHLeeDaniel/CheetahCast 
 
 # ———————————————-
 🤣Humorous Version README.md
 
-# 🐆 CheetahShift
+# 🐆 CheetahCast
 
 > 당신의 노트북 키보드를 iPad, Android, 다른 브라우저 기기로 연결합니다.
 > 
@@ -145,7 +145,7 @@ https://github.com/DHLeeDaniel/CheetahShift
 
 ## ✨ 이게 뭐예요?
 
-**CheetahShift**는 노트북의 키보드 입력을
+**CheetahCast**는 노트북의 키보드 입력을
 
 다른 기기의 브라우저(예: iPad Safari, Android Chrome 등)에
 
@@ -216,7 +216,7 @@ python sender/main.py
 - JavaScript (WebSocket client)
 - HTML + CSS (브라우저 UI)
 
-CheetahShift/
+CheetahCast/
 ├── sender/       # 입력 감지 + 서버
 │   └── [main.py](http://main.py/)
 ├── receiver/     # HTML + JS 수신기
@@ -247,7 +247,7 @@ CheetahShift/
 
 ## 📦 GitHub 링크
 
-https://github.com/DHLeeDaniel/CheetahShift 
+https://github.com/DHLeeDaniel/CheetahCast 
 
 ## 🧪 License
 
@@ -255,7 +255,7 @@ MIT License
 
 © 2025 이동훈 (Lee DongHun)
 
-> CheetahShift – 설치 없이 타자만 흐르게.
+> CheetahCast – 설치 없이 타자만 흐르게.
 > 
 > 
 > 키보드는 그대로, 입력은 어디로든.
